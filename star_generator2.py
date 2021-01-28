@@ -180,7 +180,7 @@ while MassOfGeneratedStars < ClusterMass * MassUnit :
     vy = (vr*sin(theta0)*sin(phi) + vt*(cos(psi)*cos(theta0)*sin(phi) + sin(psi)*cos(phi))) * VelocityUnit
     vz = (vr*cos(theta0) - vt*cos(psi)*sin(theta0)) * VelocityUnit
 
-    # write this star to the file
+    # write the star to the file
     star = '%f %f %f %f %f %f %f' % (mass, x, y, z, vx, vy, vz)
     f.write(star + '\n')
 
